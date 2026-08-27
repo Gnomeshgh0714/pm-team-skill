@@ -1,4 +1,4 @@
-# PM Team Skill — 多Agent产品经理团队 (v2.0)
+# PM Team Skill — 多Agent产品经理团队 (v2.1)
 
 ## 这是什么
 
@@ -53,7 +53,8 @@ pm-team-skill/
 ├── references/
 │   ├── role-definitions.md           # 5个角色完整定义
 │   ├── workflow-detail.md            # 6阶段详细执行规范+调度指令模板
-│   └── skill-templates.md            # 3个可沉淀技能模板
+│   ├── skill-templates.md            # 3个可沉淀技能模板
+│   └── lessons-from-practice.md      # 实战经验教训库（12条，阶段映射引用）
 └── templates/
     ├── idea-template.md              # 产品宪章模板
     ├── decision-log-template.md      # 决策日志模板
@@ -102,3 +103,5 @@ L1（走完流程）→ L2（发现问题）→ L3（沉淀技能）→ L4（适
 - 3个可沉淀技能
 - 8个后端模块+21张数据库表
 - L1+L2+L3验收通过
+
+v2.1 新增 `references/lessons-from-practice.md` 实战经验教训库：从「经济学论文智能审稿系统」（paper-reviewer-web）深度多代理审稿功能的完整迭代（方案调研->规划->实施->测试->上线->验证），以及跨项目工具链建设与仓库运营实践中提炼的 12 条教训，按阶段映射到工作流中引用。

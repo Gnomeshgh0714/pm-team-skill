@@ -1,7 +1,7 @@
 ---
 name: pm-team
 description: "Multi-agent product manager team workflow. Spawns specialized PM roles (user research, design, review, growth, director) that collaborate through a structured pipeline: research → PRD → review attack → director approve → execute → retro. Supports full mode (6 stages) and fast mode (4 stages). Use when building any product from zero or running a structured PM iteration."
-version: 2.0.0
+version: 2.1.0
 author: Hermes PM Team
 license: MIT
 platforms: [linux, macos, windows]
@@ -220,10 +220,16 @@ metadata:
 评审专员必须提出实质性反对意见。这一机制确保方案在进入开发前经过严格检验。
 
 ### 决策留痕
-所有跨角色裁决、方案取舍、边界决策写入 /team-rules/决策日志.md，包含决策背景、内容、理由、生效时间。
+所有跨角色裁决、方案取舍、边界决策写入 /team-rules/决策日志.md，包含决策内容、理由（Why）、下次如何应用（How to apply）、生效时间。
 
-### 技能沉淀
+### 技能沉淀与教训库
 每轮迭代复盘后，将可复用的工作方法沉淀为Skill文件，存入 /team-rules/skills/。
+跨迭代的实战经验教训统一维护在 `references/lessons-from-practice.md`（12条起步，来自真实迭代）：阶段2设计引用「方案设计」组，阶段5执行引用「工程执行」「上线与变更」组；每轮复盘产出的新教训按同样格式（结论/来源案例/应用方法）追加到对应分组。
+
+### 经验教训引用点
+- 阶段2（产品设计）：对照教训1-3自检--旧契约影响清单、输入质量降级行为、幻觉防护条目
+- 阶段5（落地执行）：对照教训4-9执行--失败行为设计、离线验收测试、成本标注、部署三步验证、变更副作用与回滚、工作区重复文件检查
+- 阶段6（复盘）：对照教训10裁决--"加强注意"类对策无效，必须结构性对策；新教训追加进教训库
 
 ## 能力升级路径
 
@@ -313,6 +319,7 @@ P0功能：[功能列表]
 - `references/role-definitions.md` — 5个角色的完整定义
 - `references/workflow-detail.md` — 6阶段详细执行规范+调度指令模板+完整示例
 - `references/skill-templates.md` — 3个可沉淀技能模板
+- `references/lessons-from-practice.md` — 实战经验教训库（12条，来自真实迭代，按阶段映射引用）
 - `templates/idea-template.md` — 产品宪章模板
 - `templates/decision-log-template.md` — 决策日志模板
 - `templates/retro-template.md` — 复盘报告模板
